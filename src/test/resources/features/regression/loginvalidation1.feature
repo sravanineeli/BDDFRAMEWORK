@@ -1,4 +1,4 @@
-Feature: validating login functionality of adactin hotel application
+Feature: validating login functionality of adactin hotel app
 
 Scenario: validating login using valid creadentials
 Given: user starts "chrome" browser

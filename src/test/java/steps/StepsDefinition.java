@@ -1,11 +1,14 @@
 package steps;
 
+import java.io.File;
 import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -18,10 +21,9 @@ import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class StepsDefinition {
+	WebDriver driver;
 
 	public class StepDefinitions {
-
-		WebDriver driver;
 		
 		@After
 		public void teardown()

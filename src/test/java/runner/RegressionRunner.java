@@ -8,9 +8,10 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		glue="steps",
-		features="src\\test\\resources\\features\\regression\\loginvalidation1.feature",
-		dryRun=false,
+		features="D:\\eclipseworkspacefortesting\\BDDframework\\src\\test\\resources\\features\\regression\\loginvalidation2.feature",
+		dryRun=true,
 		stepNotifications=true
+		
 		)
 
 public class RegressionRunner {
